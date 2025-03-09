@@ -9,6 +9,6 @@ Usage
 Enter a password to see its strength and validation feedback.
 
 Tech Stack
-HTML, CSS, JavaScript (or React.js)
+HTML, CSS, JavaScript
 License
 MIT License
