@@ -1,0 +1,84 @@
+body {
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000a1f;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(0, 0, 50, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px cyan;
+    text-align: center;
+    width: 300px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    background: rgba(0, 255, 255, 0.2);
+    color: white;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.strength {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.glow {
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan;
+}
+
+/* Alert Animation */
+.alert {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background: cyan;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    text-shadow: 0 0 5px black;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+.logo-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan;
+    animation: flash 1.5s infinite alternate;
+}
+
+@keyframes flash {
+    0% { opacity: 1; text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan; }
+    50% { opacity: 0.5; text-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15px cyan; }
+    100% { opacity: 1; text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan; }
+}
